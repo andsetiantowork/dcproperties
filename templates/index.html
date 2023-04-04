@@ -1,0 +1,398 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/" method="POST">
+            <span class="contact100-form-title">
+               Residential Price Prediction
+            </span>
+            
+            <div class="wrap-input100 validate-input">                  
+                <span class="label-input100">NUM OF BATHROOM</span>
+                  <input class="input100" type="text" placeholder="BATHRM" name="BATHRM" id="BATHRM" required>
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                    <span class="label-input100">NUM OF HALF BATHRM</span>
+                  <input class="input100" type="text" placeholder="HF_BATHRM" name="HF_BATHRM" id="HF_BATHRM" required>
+                  <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input">
+                    <span class="label-input100">HEAT</span>
+                    <select class="input100" name="HEAT" id="HEAT" required>
+                        <option value="">Select an option</option>
+                        <option value="Warm Cool">Warm Cool</option>
+                        <option value="Hot Water Rad">Hot Water Rad</option>
+                        <option value="Forced Air">Forced Air</option>
+                        <option value="Elec Base Brd">Elec Base Brd</option>
+                        <option value="Ht Pump">Ht Pump</option>
+                        <option value="Wall Furnace">Wall Furnace</option>
+                        <option value="Water Base Brd">Water Base Brd</option>
+                        <option value="Electric Rad">Electric Rad</option>
+                        <option value="Air Exchng">Air Exchng</option>
+                        <option value="Evp Cool">Evp Cool</option>
+                        <option value="No Data">No Data</option>
+                        <option value="Ind Unit">Ind Unit</option>
+                        <option value="Air-Oil">Air-Oil</option>
+                        <option value="Gravity Furnac">Gravity Furnac</option>
+                    </select>
+                    <span class="focus-input100"></span>
+                </div>
+                
+           
+                <div class="wrap-input100 validate-input">
+                    <span class="label-input100">AC</span>
+                    <select class="input100" name="AC" id="AC" required>
+                        <option value="">Select an option</option>
+                        <option value="Y">Y</option>
+                        <option value="N">N</option>
+                    </select>
+                    <span class="focus-input100"></span>
+                </div>
+                
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">NUM OF UNITS</span>
+                <input class="input100" type="text" placeholder="NUM_UNITS" name="NUM_UNITS" id="NUM_UNITS" required>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">NUM OF ROOMS</span>
+                <input class="input100" type="text" placeholder="ROOMS" name="ROOMS" id="ROOMS" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">NUM OF BEDROOM</span>
+                <input class="input100" type="text" placeholder="BEDRM" name="BEDRM" id="BEDRM" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">SIZE OF GBA (SIZE BUILDING)</span>
+                <input class="input100" type="text" placeholder="GBA" name="GBA" id="GBA" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">NUM OF BUILDING</span>
+                <input class="input100" type="text" placeholder="BLDG_NUM" name="BLDG_NUM" id="BLDG_NUM" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">STYLE</span>
+                <select class="input100" name="STYLE" id="STYLE">
+                    <option value="">Select an option</option>
+                    <option value="3 Story">3 Story</option>
+                    <option value="4 Story">4 Story</option>
+                    <option value="2 Story">2 Story</option>
+                    <option value="2.5 Story Fin">2.5 Story Fin</option>
+                    <option value="3.5 Story Fin">3.5 Story Fin</option>
+                    <option value="1 Story">1 Story</option>
+                    <option value="1.5 Story Fin">1.5 Story Fin</option>
+                    <option value="2.5 Story Unfin">2.5 Story Unfin</option>
+                    <option value="Default">Default</option>
+                    <option value="3.5 Story Unfin">3.5 Story Unfin</option>
+                    <option value="1.5 Story Unfin">1.5 Story Unfin</option>
+                    <option value="Split Level">Split Level</option>
+                    <option value="Split Foyer">Split Foyer</option>
+                    <option value="Bi-Level">Bi-Level</option>
+                    <option value="Vacant">Vacant</option>
+                    <option value="4.5 Story Fin">4.5 Story Fin</option>
+                    <option value="4.5 Story Unfin">4.5 Story Unfin</option>
+                  </select>                
+                  <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">STRUCT</span>
+                <select class="input100" name="STRUCT" id="STRUCT">
+                <option value="">Select an option</option>
+                <option value="Row Inside">Row Inside</option>
+                <option value="Semi-Detached">Semi-Detached</option>
+                <option value="Single">Single</option>
+                <option value="Row End">Row End</option>
+                <option value="Multi">Multi</option>
+                <option value="Town Inside">Town Inside</option>
+                <option value="Town End">Town End</option>
+                <span class="focus-input100"></span>
+            </select>  
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">GRADE</span>
+                <select class="input100" name="GRADE" id="GRADE">
+                    <option value="">Select an option</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Above Average">Above Average</option>
+                    <option value="Good Quality">Good Quality</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Average">Average</option>
+                    <option value="Superior">Superior</option>
+                    <option value="Fair Quality">Fair Quality</option>
+                    <option value="Exceptional-D">Exceptional-D</option>
+                    <option value="Exceptional-C">Exceptional-C</option>
+                    <option value="Low Quality">Low Quality</option>
+                    <option value="Exceptional-A">Exceptional-A</option>
+                    <option value="Exceptional-B">Exceptional-B</option>
+                  </select>                
+                  <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">CONDITION</span>
+                <select class="input100" name="CNDTN" id="CNDTN">
+                    <option value="">Select an option</option>
+                    <option value="Good">Good</option>
+                    <option value="Very Good">Very Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Fair">Fair</option>
+                    <option value="Poor">Poor</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+            
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">EXTWALL</span>
+                <select class="input100" name="EXTWALL" id="EXTWALL">
+                    <option value="">Select an option</option>
+                    <option value="Common Brick">Common Brick</option>
+                    <option value="Stucco">Stucco</option>
+                    <option value="Stone">Stone</option>
+                    <option value="Stucco Block">Stucco Block</option>
+                    <option value="Brick/Stone">Brick/Stone</option>
+                    <option value="Concrete Block">Concrete Block</option>
+                    <option value="Face Brick">Face Brick</option>
+                    <option value="Wood Siding">Wood Siding</option>
+                    <option value="Brick/Siding">Brick/Siding</option>
+                    <option value="Brick/Stucco">Brick/Stucco</option>
+                    <option value="Stone Veneer">Stone Veneer</option>
+                    <option value="Brick Veneer">Brick Veneer</option>
+                    <option value="Vinyl Siding">Vinyl Siding</option>
+                    <option value="Stone/Stucco">Stone/Stucco</option>
+                    <option value="Stone/Siding">Stone/Siding</option>
+                    <option value="Aluminum">Aluminum</option>
+                    <option value="Concrete">Concrete</option>
+                    <option value="Metal Siding">Metal Siding</option>
+                    <option value="Shingle">Shingle</option>
+                    <option value="Hardboard">Hardboard</option>
+                    <option value="Default">Default</option>
+                    <option value="Plywood">Plywood</option>
+                    <option value="Adobe">Adobe</option>
+                  </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">ROOF</span>
+                <select class="input100" name="ROOF" id="ROOF">
+                    <option value="">Select an option</option>
+                    <option value="Metal- Sms">Metal- Sms</option>
+                    <option value="Built Up">Built Up</option>
+                    <option value="Neopren">Neopren</option>
+                    <option value="Metal- Cpr">Metal- Cpr</option>
+                    <option value="Typical">Typical</option>
+                    <option value="Slate">Slate</option>
+                    <option value="Comp Shingle">Comp Shingle</option>
+                    <option value="Composition Ro">Composition Ro</option>
+                    <option value="Metal- Pre">Metal- Pre</option>
+                    <option value="Shake">Shake</option>
+                    <option value="Shingle">Shingle</option>
+                    <option value="Clay Tile">Clay Tile</option>
+                    <option value="Water Proof">Water Proof</option>
+                    <option value="Wood- FS">Wood- FS</option>
+                    <option value="Concrete Tile">Concrete Tile</option>
+                    <option value="Concrete">Concrete</option>
+                </select>                
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">INTWALL</span>
+                <select class="input100" name="INTWALL" id="INTWALL">
+                    <option value="">Select an option</option>
+                    <option value="Hardwood">Hardwood</option>
+                    <option value="Wood Floor">Wood Floor</option>
+                    <option value="Hardwood/Carp">Hardwood/Carp</option>
+                    <option value="Carpet">Carpet</option>
+                    <option value="Ceramic Tile">Ceramic Tile</option>
+                    <option value="Lt Concrete">Lt Concrete</option>
+                    <option value="Default">Default</option>
+                    <option value="Terrazo">Terrazo</option>
+                    <option value="Parquet">Parquet</option>
+                    <option value="Resiliant">Resiliant</option>
+                    <option value="Vinyl Sheet">Vinyl Sheet</option>
+                    <option value="Vinyl Comp">Vinyl Comp</option>
+                  </select>
+                <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">NUM OF KITCHENS</span>
+                <input class="input100" type="text" placeholder="KITCHENS" name="KITCHENS" id="KITCHENS" required>
+                <span class="focus-input100"></span>
+            </div>
+
+
+
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">NUM OF FIRE PLACES</span>
+                <input class="input100" type="text" placeholder="FIREPLACES" name="FIREPLACES" id="FIREPLACES" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">SIZE OF LANDAREA</span>
+                <input class="input100" type="text" placeholder="LANDAREA" name="LANDAREA" id="LANDAREA" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">NEIGHBOURHOOD</span>
+                <select class="input100" name="ASSESSMENT_NBHD" id="ASSESSMENT_NBHD">
+                    <option value="">Select an option</option>
+                    <option value="Old City 2">Old City 2</option>
+                    <option value="Foggy Bottom">Foggy Bottom</option>
+                    <option value="Central-tri 1">Central-tri 1</option>
+                    <option value="Old City 1">Old City 1</option>
+                    <option value="Southwest Waterfront">Southwest Waterfront</option>
+                    <option value="Capitol Hill">Capitol Hill</option>
+                    <option value="Georgetown">Georgetown</option>
+                    <option value="Glover Park">Glover Park</option>
+                    <option value="Burleith">Burleith</option>
+                    <option value="Palisades">Palisades</option>
+                    <option value="Berkley">Berkley</option>
+                    <option value="Foxhall">Foxhall</option>
+                    <option value="Kent">Kent</option>
+                    <option value="Wesley Heights">Wesley Heights</option>
+                    <option value="American University">American University</option>
+                    <option value="Spring Valley">Spring Valley</option>
+                    <option value="Chevy Chase">Chevy Chase</option>
+                    <option value="North Cleveland Park">North Cleveland Park</option>
+                    <option value="Cleveland Park">Cleveland Park</option>
+                    <option value="Wakefield">Wakefield</option>
+                    <option value="Observatory Circle">Observatory Circle</option>
+                    <option value="Forest Hills">Forest Hills</option>
+                    <option value="Massachusetts Avenue Heights">Massachusetts Avenue Heights</option>
+                    <option value="Woodley">Woodley</option>
+                    <option value="Kalorama">Kalorama</option>
+                    <option value="Garfield">Garfield</option>
+                    <option value="Hawthorne">Hawthorne</option>
+                    <option value="Mt. Pleasant">Mt. Pleasant</option>
+                    <option value="Crestwood">Crestwood</option>
+                    <option value="Columbia Heights">Columbia Heights</option>
+                    <option value="16th Street Heights">16th Street Heights</option>
+                    <option value="Brightwood">Brightwood</option>
+                    <option value="Shepherd Heights">Shepherd Heights</option>
+                    <option value="Colonial Village">Colonial Village</option>
+                    <option value="Petworth">Petworth</option>
+                    <option value="Ledroit Park">Ledroit Park</option>
+                    <option value="Eckington">Eckington</option>
+                    <option value="Takoma Park">Takoma Park</option>
+                    <option value="Chillum">Chillum</option>
+                    <option value="Brookland">Brookland</option>
+                    <option value="Riggs Park">Riggs Park</option>
+                    <option value="Brentwood">Brentwood</option>
+                    <option value="Trinidad">Trinidad</option>
+                    <option value="Woodridge">Woodridge</option>
+                    <option value="Michigan Park">Michigan Park</option>
+                    <option value="Fort Lincoln">Fort Lincoln</option>>
+                    <option value="Lily Ponds">Lily Ponds</option>
+                    <option value="Deanwood">Deanwood</option>
+                    <option value="Marshall Heights">Marshall Heights</option>
+                    <option value="Fort Dupont Park">Fort Dupont Park</option>
+                    <option value="Hillcrest">Hillcrest</option>
+                    <option value="Anacostia">Anacostia</option>
+                    <option value="Randle Heights">Randle Heights</option>
+                    <option value="Barry Farms">Barry Farms</option>
+                    <option value="Congress Heights">Congress Heights</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div> 
+            
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">WARD</span>
+                <select class="input100" name="WARD" id="WARD">
+                    <option value="">Select an option</option>
+                    <option value="Ward 2">Ward 2</option>
+                    <option value="Ward 1">Ward 1</option>
+                    <option value="Ward 6">Ward 6</option>
+                    <option value="Ward 5">Ward 5</option>
+                    <option value="Ward 3">Ward 3</option>
+                    <option value="Ward 4">Ward 4</option>
+                    <option value="Ward 7">Ward 7</option>
+                    <option value="Ward 8">Ward 8</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">SALEYEAR (YYYY)</span>
+                <input class="input100" type="text" placeholder="SALEYEAR" name="SALEYEAR" id="SALEYEAR" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">BUY ESTIMATION (MONTH 1 - 12)</span>
+                <input class="input100" type="text" placeholder="SALEMONTH" name="SALEMONTH" id="SALEMONTH" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">YEAR REMODEL (CHANGE STRUCTUR)</span>
+                <select class="input100" name="binYR_RMDL" id="binYR_RMDL">
+                    <option value="">Select an option</option>
+                    <option value="No Remodeling">No Remodeling</option>
+                    <option value="<=1910">&lt;=1910</option>
+                    <option value="1911-1940">1911-1940</option>
+                    <option value="1941-1970">1941-1970</option>
+                    <option value="1971-2000">1971-2000</option>
+                    <option value=">2000">&gt;2000</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input100">YEAR REMODEL</span>
+                <select class="input100" name="binEYB" id="binEYB">
+                    <option value="">Select an option</option>
+                    <option value="No Remodeling">No Remodeling</option>
+                    <option value="<=1910">&lt;=1910</option>
+                    <option value="1911-1940">1911-1940</option>
+                    <option value="1941-1970">1941-1970</option>
+                    <option value="1971-2000">1971-2000</option>
+                    <option value=">2000">&gt;2000</option>
+                </select>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input">
+                <span class="label-input100">AGE OF BUILDING</span>
+                <input class="input100" type="text" placeholder="ageAYB" name="ageAYB" id="ageAYB" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            Prediksi
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}

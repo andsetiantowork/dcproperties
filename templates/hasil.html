@@ -1,0 +1,64 @@
+
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Price Prediction Result</title>
+<style>
+.container {
+  border: 1px solid #d6b8b8;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px auto 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li strong {
+  font-weight: bold;
+  font-size: 1.2em;
+  display: inline-block;
+  width: 150px;
+}
+.container p:first-of-type {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007bff;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Price Prediction Result</h1>
+    <p>The predicted price is: {{ pred_price }}</p>
+    <p>Your Feature Preferences:</p>
+    <ul>
+        
+        <li><strong>Ward:</strong> {{ ward }}</li>
+        <li><strong>Assessment NBHD:</strong> {{ assessment_nbhd }}</li>
+        <li><strong>Style:</strong> {{ style }}</li>
+        <li><strong>Struct:</strong> {{ struct }}</li>
+        <li><strong>Extwall:</strong> {{ extwall }}</li>
+        <li><strong>Intwall:</strong> {{ intwall }}</li>
+        <li><strong>Roof:</strong> {{ roof }}</li>
+        <li><strong>Grade:</strong> {{ grade }}</li>
+        <li><strong>Cndtn:</strong> {{ cndtn }}</li>
+        <li><strong>Num Units:</strong> {{ num_units }}</li>
+        <li><strong>Bldg Num:</strong> {{ bldg_num }}</li>
+        <li><strong>Rooms:</strong> {{ rooms }}</li>
+        <li><strong>Bedrm:</strong> {{ bedrm }}</li>
+        <li><strong>Bathrm:</strong> {{ bathrm }}</li>
+        <li><strong>Hf Bathrm:</strong> {{ hf_bathrm }}</li>
+        <li><strong>Kitchens:</strong> {{ kitchens }}</li>
+        <li><strong>Fireplaces:</strong> {{ fireplaces }}</li>
+        <li><strong>AC:</strong> {{ ac }}</li>
+        <li><strong>Heat:</strong> {{ heat }}</li>
+        <li><strong>Landarea:</strong> {{ landarea }}</li>
+        <li><strong>GBA:</strong> {{ gba }}</li>
+        <li><strong>AYB:</strong> {{ ayb }}</li>
+        <li><strong>Sale year:</strong> {{ saleyear }}</li>
+        <li><strong>Salemonth:</strong> {{ salemonth }}</li>
+        <li><strong>Yr Rmdl:</strong> {{ yr_rmdl }}</li>
+    </ul>
+</div>
+{% endblock %}
